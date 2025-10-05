@@ -1,0 +1,143 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&family=Orbitron:wght@500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 237 100% 4.9%;
+    --foreground: 199 100% 92%;
+
+    --card: 225 64% 16%;
+    --card-foreground: 199 87% 90%;
+
+    --popover: 225 64% 16%;
+    --popover-foreground: 199 87% 90%;
+
+    --primary: 225 64% 33%;
+    --primary-foreground: 199 100% 92%;
+
+    --secondary: 221 39% 11%;
+    --secondary-foreground: 199 100% 92%;
+
+    --muted: 220 34% 18%;
+    --muted-foreground: 198 53% 70%;
+
+    --accent: 189 95% 43%;
+    --accent-foreground: 199 100% 96%;
+
+    --destructive: 356 76% 52%;
+    --destructive-foreground: 199 100% 96%;
+
+    --border: 221 47% 23%;
+    --input: 221 47% 23%;
+    --ring: 189 95% 43%;
+
+    --success: 158 64% 45%;
+    --warning: 45 92% 53%;
+    --danger: 3 87% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 237 100% 4.9%;
+    --sidebar-foreground: 199 100% 92%;
+    --sidebar-primary: 225 64% 33%;
+    --sidebar-primary-foreground: 199 100% 92%;
+    --sidebar-accent: 189 95% 43%;
+    --sidebar-accent-foreground: 199 100% 96%;
+    --sidebar-border: 221 47% 23%;
+    --sidebar-ring: 189 95% 43%;
+  }
+
+  .dark {
+    --background: 237 100% 4.9%;
+    --foreground: 199 100% 92%;
+
+    --card: 225 64% 16%;
+    --card-foreground: 199 87% 90%;
+
+    --popover: 225 64% 16%;
+    --popover-foreground: 199 87% 90%;
+
+    --primary: 225 64% 33%;
+    --primary-foreground: 199 100% 92%;
+
+    --secondary: 221 39% 11%;
+    --secondary-foreground: 199 100% 92%;
+
+    --muted: 220 34% 18%;
+    --muted-foreground: 198 53% 70%;
+
+    --accent: 189 95% 43%;
+    --accent-foreground: 199 100% 96%;
+
+    --destructive: 356 76% 52%;
+    --destructive-foreground: 199 100% 96%;
+
+    --border: 221 47% 23%;
+    --input: 221 47% 23%;
+    --ring: 189 95% 43%;
+
+    --success: 158 64% 45%;
+    --warning: 45 92% 53%;
+    --danger: 3 87% 55%;
+
+    --sidebar-background: 237 100% 4.9%;
+    --sidebar-foreground: 199 100% 92%;
+    --sidebar-primary: 225 64% 33%;
+    --sidebar-primary-foreground: 199 100% 92%;
+    --sidebar-accent: 189 95% 43%;
+    --sidebar-accent-foreground: 199 100% 96%;
+    --sidebar-border: 221 47% 23%;
+    --sidebar-ring: 189 95% 43%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family:
+      "Exo 2",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    min-height: 100vh;
+    background-color: #000119;
+    background-image:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.07'%3E%3Ccircle cx='2' cy='6' r='0.8'/%3E%3Ccircle cx='40' cy='60' r='0.5'/%3E%3Ccircle cx='58' cy='20' r='0.9'/%3E%3Ccircle cx='90' cy='90' r='0.6'/%3E%3Ccircle cx='82' cy='38' r='0.4'/%3E%3Ccircle cx='12' cy='80' r='0.5'/%3E%3Ccircle cx='70' cy='72' r='0.7'/%3E%3Ccircle cx='25' cy='45' r='0.6'/%3E%3C/g%3E%3C/svg%3E"),
+      radial-gradient(
+        circle at 20% 20%,
+        rgba(14, 116, 144, 0.12),
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 80% 0%,
+        rgba(29, 78, 216, 0.18),
+        transparent 45%
+      ),
+      radial-gradient(
+        circle at 50% 80%,
+        rgba(6, 182, 212, 0.16),
+        transparent 48%
+      );
+    background-attachment: fixed;
+    background-size:
+      600px 600px,
+      cover,
+      cover,
+      cover;
+  }
+}
